@@ -11,7 +11,6 @@ public class Transform {
 
 	protected List<String[]> records;
 	protected List<String[]> currentResult;
-	protected String operations;
 
 	public Transform(List<String[]> records) {
 		this.records = records;
@@ -237,22 +236,4 @@ public class Transform {
 		}
 		return false;
 	}
-
-	public List<String[]> getRecords() {
-		return records;
-	}
-
-	public void setRecords(List<String[]> records) {
-		this.records = records;
-	}
-
-	public List<String[]> getCurrentResult() {
-		return currentResult;
-	}
-
-	public void setCurrentResult(List<String[]> currentResult) {
-		this.currentResult = currentResult;
-	}
-	
-	
 }

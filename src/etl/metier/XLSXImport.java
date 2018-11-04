@@ -8,9 +8,16 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Row.MissingCellPolicy;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class XLSXImport{
-/*
+import com.smartxls.WorkBook;
+
+public class XLSXImport extends IData {
+
 	@Override
 	public void importData(String path) {
 
@@ -25,8 +32,6 @@ public class XLSXImport{
 			
 			workbook.setMissingCellPolicy(MissingCellPolicy.CREATE_NULL_AS_BLANK);
 
-
-			// we iterate on rows
 			Iterator<Row> rowIt = sheet.iterator();
 
 			while (rowIt.hasNext()) {
@@ -49,5 +54,5 @@ public class XLSXImport{
 		}
 
 	}
-*/
+
 }
